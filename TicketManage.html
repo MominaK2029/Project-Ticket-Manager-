@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Ticket Manager</title>
-</head>
-<body>
-<h1>Electrical Ticket Manager</h1>    
-<div class="tab">
-    <button class="tablinks" onclick="openTab(tasks, 'To-do')">To-do</button>
-    <button class="tablinks" onclick="openTab(tasks, 'Pending')">Pending</button>
-    <button class="tablinks" onclick="openTab(tasks, 'Completed')">Completed</button>
+<body bgcolor="#bddcff">
+    <!--Home page-->
+    <div class="container teal">
+    <h1><button class="button" onclick="open()">≡</button> Electrical Ticket Manager</h1>
 </div>
-
-<div id="To-do" class="tabcontent">
-    <h2>Incoming Tasks</h2>
-    <table>
-        <tr>
-            <th>Timestamp</th>
-            <th>Email Address</th>
-            <th>Client</th>
-            <th>Client's Extension/number</th>
-            <th>Room Number</th>
-            <th>Free Period</th>
-            <th>Description</th>
-            <th>Notes</th>
-        </tr>
-    </table>
+    <!--Sidebar-->
+    <div class="sidebar bar-block border-right" style="display:none"
+    id = "Sections">
+        <button onclick="close()" class= "bar-item large">Collapse</button>
+        <a href="#" class="bar-item button">To-do</a>
+        <a href="#" class="bar-item button">Pending</a>
+        <a href="#" class="bar-item button">Completed</a>
 </div>
+    <!--To-do Tab-->
+    <!--Pending Tab-->
+    <!--Completed Tab-->
+    <!--Analyzing Task-->
+    <!--Link Google form-->
+    <!--Add Auto receipts email or pring + Notes-->
+    <script>
+        const sidebar = document.getElementById("Sections");
 
+        function open() {
+            sidebar.style.display = "block";
+        }
 
+        function close() {
+            sidebar.style.display = "none";
+        }
+    </script>
 </body>
 </html>
+
+
+
