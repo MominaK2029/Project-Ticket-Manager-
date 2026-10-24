@@ -5,10 +5,13 @@
 </head>
 <body>
 <h1>Electrical Ticket Manager</h1>    
-<nav>
-    <a href="#">To-do</a> | <a href="#">Pending</a> | <a href="#">Completed</a>
-</nav>
-<section>
+<div class="tab">
+    <button class="tablinks" onclick="openTab(tasks, 'To-do')">To-do</button>
+    <button class="tablinks" onclick="openTab(tasks, 'Pending')">Pending</button>
+    <button class="tablinks" onclick="openTab(tasks, 'Completed')">Completed</button>
+</div>
+
+<div id="To-do" class="tabcontent">
     <h2>Incoming Tasks</h2>
     <table>
         <tr>
@@ -22,6 +25,8 @@
             <th>Notes</th>
         </tr>
     </table>
-</section>
+</div>
+
+
 </body>
 </html>
