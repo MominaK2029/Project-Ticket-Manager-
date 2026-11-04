@@ -24,7 +24,7 @@ with tab1:
     # Configure columns (optional)
     column_config = {
         "Timestamp": st.column_config.TextColumn("Task", help="Time entered"),
-        "Email": st.column_config.TextColumn("Email", help="@worcesterschools.net"),
+        "Email": st.column_config.TextColumn("Email", help="Contact info"),
         "Name": st.column_config.TextColumn("Name", help="(First, Last)"),
         "Contact": st.column_config.TextColumn("Contact", help="Phone Number or Extension"),
         "Location": st.column_config.TextColumn("Location", help="Locations"),
