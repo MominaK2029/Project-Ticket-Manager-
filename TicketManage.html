@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Electrical Ticket Manager</title>
-<meta charset="utf-8">
-<meta name="view port" content="width=device-width, intial-scale=1">
-<style>
-* {
-    box-sizing: border-box;
-    }
-</style>
-    <!--Home Page-->
+    <title>Electrical Ticket Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--SideBar-->
+<body bgcolor="#bddcff">
+    <!--Home page-->
+    <h1></h1>
+        <!--Sidebar-->
+        <div class="sidebar bar-block border-right" style="display:none" id="sidebar">
+            <button onclick="close()" class="bar-item large">Collapse</button>
+            <a href="#" class="bar-item button">To-do</a>
+            <a href="#" class="bar-item button">Pending</a>
+            <a href="#" class="bar-item button">Completed</a>
+        </div>
+
+        <!--Title-->
+        <!--Design-->
+
     <!--To-do Tab-->
     <!--Pending Tab-->
     <!--Completed Tab-->
-    <!--Analyzing task-->
-    <!--Link Form-->
-    <!--Auto Reciepts-->
+    <!--Analyzing Task-->
+    <!--Link Google form-->
+    <!--Add Auto receipts email or pring + Notes-->
+    <script>
+        const sidebar = document.getElementById("Sections");
+        function open() {
+            sidebar.style.display = "block";
+        }
+        function close() {
+            sidebar.style.display = "none"; 
+        }
+    </script>
 </body>
 </html>
