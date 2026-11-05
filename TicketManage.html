@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <body bgcolor="#9CBAD6">
+
+
     <!--Home page-->
 
     <!--Buttons, Buttons, I love Buttons-->
@@ -22,74 +24,46 @@
             }
         </style>
 
-        <h1><button class="button" onclick="open()" style="margin-left:5%">☰</button><span
+        <h1><button class="button" onclick="open()" style="margin-left:5%" font-size="24px">☰</button><span
                 style="font-size:80px; margin-left: 15%; color: #316EA8;"> Electrical Ticket Manager</h1>
+
     </div>
     <header></header>
     </div>
+
     <!--Sidebar-->
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="Sections">
-        <button onclick="open()" class="w3-bar-item large">≡</button>
-        <a href="#" class="w3-bar-item w3-button">To-do</a>
-        <a href="#" class="w3-bar-item w3-button">Pending</a>
-        <a href="#" class="w3-bar-item w3-button">Completed</a>
+    <div class="container teal">
+        <style>
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #214B83;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidebar a {
+        padding: 8px, 8px, 8px, 32px;
+        text-decoration: wavy;
+        font-size: 25px;
+        color: #A9BCCC;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidebar a:hover {
+        color:#C3D7E8
+    }
+    </style>
     </div>
-
     <!--To-do Tab-->
-
-
-
-
-
-
-
-
     <!--Pending Tab-->
-
-
-
-
-
-
-
-
     <!--Completed Tab-->
-
-
-
-
-
-
-
     <!--Analyzing Task-->
-
-
-
-
-
-
-
     <!--Link Google form-->
-
-
-
-
-
-
-    
     <!--Add Auto receipts email or pring + Notes-->
-    <script>
-        const sidebar = document.getElementById("Sections");
-
-
-        function open() {
-            sidebar.style.display = "block";
-        }
-
-
-        function close() {
-            sidebar.style.display = "none";
-        }
-    </script>
 </body>
 </html>
