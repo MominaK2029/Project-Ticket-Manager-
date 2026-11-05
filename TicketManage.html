@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Electrical Ticket Manager</title>
-<meta charset="utf-8">
-<meta name="view port" content="width=device-width, intial-scale=1">
-<style>
-* {
-    box-sizing: border-box;
-    }
-</style>
-    <!--Home Page-->
-
-    <!--SideBar-->
+<html>
+<body bgcolor="#9CBAD6">
+    <!--Home page-->
+    <div class="container teal">
+    <h1><button class="button" onclick="open()">☰</button><span style="font-size:60px; text-align:center; color: #316EA8;"> Electrical Ticket Manager</h1>
+</div>
+    <header></header>
+</div>
+    <!--Sidebar-->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none"
+    id = "Sections">
+        <button onclick="open()" class= "w3-bar-item large">≡</button>
+        <a href="#" class="w3-bar-item w3-button">To-do</a>
+        <a href="#" class="w3-bar-item w3-button">Pending</a>
+        <a href="#" class="w3-bar-item w3-button">Completed</a>
+</div>
+    <div style="margin-left: 25%">
+</div>
     <!--To-do Tab-->
     <!--Pending Tab-->
     <!--Completed Tab-->
-    <!--Analyzing task-->
-    <!--Link Form-->
-    <!--Auto Reciepts-->
+    <!--Analyzing Task-->
+    <!--Link Google form-->
+    <!--Add Auto receipts email or pring + Notes-->
+    <script>
+        const sidebar = document.getElementById("Sections");
+
+
+        function open() {
+            sidebar.style.display = "block";
+        }
+
+
+        function close() {
+            sidebar.style.display = "none";
+        }
+    </script>
 </body>
 </html>
